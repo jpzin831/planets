@@ -1,0 +1,15 @@
+<%- include ('templates/header'); -%>
+
+<div class='container'>
+    <div class='jumbotron'>
+        <h1> SEARCH RESULTS </h1>
+        <button class='btn btn-info' onclick='location.href="/";'>Search Again</button>
+    </div>
+     <h3><%data.title%></h3>
+      <p><%data.author%></p>
+       <p><%data.year%></p>
+     <p><%data.number_of_pages%></p>
+   
+</div>
+
+<%- include ('templates/footer'); -%>
