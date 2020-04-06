@@ -1,38 +1,126 @@
-body{
-	margin: 50px 0px auto auto;
-	text-align: center;
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0 auto; 
+    background-color: lightgray;
+
 }
 
-.footer{
-	width: 100%;
-	position: absolute;
-	bottom: 0;
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    background-image: url("../img/binary-banner.jpg"); 
 }
 
-hr{
-	margin: 0 auto;
+.title{
+    text-decoration: underline;
 }
 
-#movies-list, #movies-list p, #movies-list h5{
-  list-style: none;
-  margin: 0;
-  padding: 0;
+#home {
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-size: 250%;
 }
 
-#movies-list > li{
-  float: left;
-  margin-right: 50px;
-  width: 120px;
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-#movies-list > li > .poster{
-  display: block;
-  float: left;
-  margin-right: 0px;
+nav a {
+    color: #eceff1;
+    margin-top: 0px;
+    padding: .7em;
+    text-decoration: none;
+    transition: .25s;
+    font-size: 150%;
 }
 
-#movies-list > li > .poster,
-#movies-list > li > .poster > img{
-  width: 100%; 
-  height: 100%;
+nav a:hover {
+    color: teal;
+    padding: .9em;
+    padding-bottom: 10px;
+    border-bottom: 4px solid white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 3% 20%;
+}
+
+table {
+    width: 60%;
+    margin: 0 auto;
+}
+
+tr {
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+}
+
+td, th {
+    padding: 20px;
+}
+
+td {
+    font-weight: normal;
+    background-color: gray;
+}
+
+.os-chart{
+    width: 250px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.os-types{
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+}
+.meta-chart{
+    width: 550px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mobile-chart{
+    width: 550px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+}
+#csumb_logo{
+    width: 75px;
+    height:auto;
+}
+.fig{
+    padding-left: 200px;
+    font-size: 75%;
+    font-style: italic;
+}
+
+.center{
+    text-align: center;
+     
+}
+footer {
+    display: flex;
+    margin: 2em 0;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+footer hr {
+    width: 70%;
 }
