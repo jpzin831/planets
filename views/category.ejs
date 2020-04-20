@@ -1,0 +1,46 @@
+<%- include ('templates/header'); -%>
+
+<div class='container'>
+	<div class='jumbotron'>
+		<h1> POPULAR QUOTES </h1>
+		<form action='/quotesSearch' method='GET'>
+			<div class='form-group row'>
+				<label for='Inspirational' class='col-sm-4 col-form-label'>Inspirational</label>
+				<div class='col-sm-4'>
+					<input type='radio' class='form-control' id='category' name='category' value="Inspirational" >
+				</div>
+				</div>
+				<div class='form-group row'>
+				<label for='Moral' class='col-sm-4 col-form-label'>Moral</label>
+				<div class='col-sm-4'>
+					<input type='radio' class='form-control' id='category' name='category' value="Moral" >
+				</div>
+				</div>
+				<div class='form-group row'>
+				<label for='Wisdom' class='col-sm-4 col-form-label'>Wisdom</label>
+				<div class='col-sm-4'>
+					<input type='radio' class='form-control' id='category' name='category' value="Wisdom" >
+				</div>
+				</div>
+				<div class='form-group row'>
+				<label for='Motivational' class='col-sm-4 col-form-label'>Motivational</label>
+				<div class='col-sm-4'>
+					<input type='radio' class='form-control' id='category' name='category' value='Motivational' >
+				</div>
+				</div>
+
+			
+			
+			<div class='form-group row'>
+				<div class='col-sm-4'></div>
+				<div class='col-sm-4'>
+					<button class='btn btn-primary btn-block'>Search Author</button>
+				</div>
+				<div class='col-sm-4'></div>
+			</div>
+		</form>
+	</div>
+</div>
+
+<%- include ('templates/footer'); -%>
+
